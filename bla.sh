@@ -1,3 +1,3 @@
 #!/bin/sh
 
-printf "${FOO}\n" ${a} ${b}
+printf '%s\n' aaa
