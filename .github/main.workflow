@@ -1,9 +1,9 @@
 workflow "Shellcheck" {
   on = "push"
-  resolves = ["actions/bin/shellcheck@master"]
+  resolves = ["syntaxcheck"]
 }
 
-action "actions/bin/shellcheck@master" {
+action "syntaxcheck" {
   uses = "actions/bin/shellcheck@master"
   args = "bla.sh"
 }
